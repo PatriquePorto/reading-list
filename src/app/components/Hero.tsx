@@ -1,18 +1,20 @@
-import React from 'react'
-import { HiArrowUpRight } from 'react-icons/hi2'
+import React from "react";
+import { HiArrowTopRightOnSquare, HiOutlineBookOpen } from "react-icons/hi2";
 
-const Hero = () => {
+export default function Hero() {
   return (
-    <section>
-      <h1>Boa leitura, Patrique</h1>
-      <p className='text-lg font-semibold'>Parabéns, você está evoluindo muito na sua meta!       
-      </p>
-      <a href="#" className='btn'>
-         Explorar
-        <HiArrowUpRight /> 
-       </a>
+    <section className="mb-8 flex gap-8">
+      <div>
+        <h1 className="mb-2">Boa Leitura, Patrique</h1>
+        <p className="lead mb-2">
+          Parabéns, você tem evoluído muito bem na sua meta!
+        </p>
+        <a href="#" className="btn">
+          Explorar
+          <HiArrowTopRightOnSquare />
+        </a>
+      </div>
+      <HiOutlineBookOpen className="block h-20 w-20 text-gray-500 md:hidden" />
     </section>
-  )
+  );
 }
-
-export default Hero

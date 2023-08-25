@@ -1,16 +1,18 @@
-import { fetchMyBooks } from "../api"
+import MyBookItem from "@components/MyBookItem";
+
+import { fetchMyBooks } from "@/app/api";
 
 export default async function MyBooks() {
-    const myBooks = await fetchMyBooks()
+  const myBooks = await fetchMyBooks();
 
-    return (
-     <div>
-        {myBooks.map((book: any) => (
-            <div key={book.id}>
-                <h2>Title: {book.title}</h2>
-                <p>Author: {book.author}</p>
-            </div>
+  return (
+    <section className="mb-8">
+      <h2 className="mb-6">Minhas Leituras</h2>
+      <div className="grid gap-2 md:grid-cols-2">
+        {myBooks.map((item) => (
+          <MyBookItem key={item.id} item={item} />
         ))}
-     </div>
-    )
+      </div>
+    </section>
+  );
 }

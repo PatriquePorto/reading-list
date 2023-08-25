@@ -1,24 +1,3 @@
-<h1 align="center"> Next reading books app </h1>
-
-</br>
-<img src="/preview.png" width="100%"></img>
-</br>
-
-<br>
-
-## 🚀 Tecnologies
-
-This project was developed with the following technologies:
-
-- React/Next
-- Typescript
-- Javascript
-- Tailwind CSS
-
-## 💻 Project
-
-This an application of reading books!
-
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
